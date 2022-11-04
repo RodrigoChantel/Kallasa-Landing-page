@@ -117,16 +117,26 @@ body{
 }
 
 .kallasa-box-solutions{
-  height: 450px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
+  background-color: #636363;
 }
-.kallasa-box-solutions-01{
-  height: 250px;
-  width: 150px;
-  border-bottom-right-radius: 40px 30px;
+.kallasa-box-solutions-left{
+  height: 175px;
+  width: 125px;
+  border-bottom-right-radius: 40px 25px;
+  background-color: #e1dfe2;
 }
-.kallasa-box-solutions-02{
-  height: 250px;
-  width: 150px;
-  border-bottom-left-radius: 40px 30px;
+.kallasa-box-solutions-right{
+  height: 175px;
+  width: 125px;
+  border-bottom-left-radius: 40px 25px;
+  background-color: #e1dfe2;
+}
+.kallasa-box-title{
+  height: 350px;
+  width: 250px;
+}
+.edit-img{
+  width: 80px;
 }

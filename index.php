@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light py-3 border-bottom">
+        <nav class="navbar navbar-expand-lg  position-fixed bg-light py-3 border-bottom" style="width: 100%; z-index:100;">
             <div class="container-fluid container-sm">
             <a class="navbar-brand text-dark fw-bold" href="#"><i class="fa-sharp fa-solid fa-rocket"></i> Kallasa.Mkt</a>
 
@@ -72,7 +72,7 @@
     </header>
     
     <main>
-        <section class="section-01 w-100 bg-light d-flex flex-row flex-nowrap justify-content-center" style="height: 600px;">
+        <section class="section-01 w-100 bg-light d-flex flex-row flex-nowrap justify-content-center" style="height: 800px;">
             <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center">
                 
                 <div class="container-fluid mx-md-0 mx-auto px-0 asd" style="width: 400px;">
@@ -92,39 +92,82 @@
                         <div class="kallasa-box-right bg-primary kallasa-edit-02"></div>
                     </div>
                 </div>
+                
             </div>
 
         </section>
 
-        <section class="section-02" style="height: 600px;">
+        <section class="section-02 my-5">
             <p class="text-center mt-5 fs-3 fw-bold">Nossas soluções se baseiam em</p>
             <div class="container-lg py-3 mt-5 d-flex flex-row flex-wrap justify-content-around">
 
-                <div class="container-fluid mx-md-0 mx-auto p-0" style="width: 300px;">
-                    <div class="kallasa-box-solutions bg-dark d-flex">
-                        <div class="bg-secondary kallasa-box-solutions-01"></div>
-                        <div class="bg-secondary kallasa-box-solutions-02"></div>
+                <div class="container-fluid my-3 mx-md-0 mx-auto p-0 shadow" style="width: 250px;">
+                    <div class="kallasa-box-solutions d-flex">
+                        <div class="kallasa-box-solutions-left"></div>
+                        <div class="kallasa-box-solutions-right"></div>
+                        <div class="kallasa-box-title d-inline position-absolute border">
+                            <div class="container-fluid d-flex flex-row align-items-center justify-content-center" style="height: 175px; opacity:68%;">
+                            <img src="http://192.168.0.100/kallasa.com.br/assets/img/icons/analysis.svg" class="edit-img" alt="analysis">
+                            </div>
+                            <div class="container-fluid mt-2" style="height: 175px;">
+                            <h3 class="text-light text-start fs-5">Analytics</h3>
+                            <p class="text-light d-flex flex-row align-bottom align-baseline align-items-baseline mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores, dolor quaerat perferendis eaque.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card text-center pt-5 pb-3 my-lg-0 my-md-0 my-3 shadow-sm" style="width: 18rem;">
-                    <div class="card-body">
-                        <img class="img-fluid" src="https://kallasa.000webhostapp.com/Assets/img/icons/Analytics.png" style="width: 100px;" alt="">
-                        <h5 class="card-title mt-3">Analytics</h5>
+                <div class="container-fluid my-3 mx-md-0 mx-auto p-0 shadow" style="width: 250px;">
+                    <div class="kallasa-box-solutions d-flex">
+                        <div class="kallasa-box-solutions-left"></div>
+                        <div class="kallasa-box-solutions-right"></div>
+                        <div class="kallasa-box-title d-inline position-absolute border">
+                            <div class="container-fluid d-flex flex-row align-items-center justify-content-center" style="height: 175px; opacity:68%;">
+                            <img src="http://192.168.0.100/kallasa.com.br/assets/img/icons/people-search-one.svg" class="edit-img" alt="people search one">
+                            </div>
+                            <div class="container-fluid mt-2" style="height: 175px;">
+                            <h3 class="text-light text-start fs-6">Previsão do comportamento do cliente</h3>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores, dolor quaerat perferendis eaque.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card text-center pt-5 pb-3 my-lg-0 my-md-0 my-3 shadow-sm" style="width: 18rem;">
-                    <div class="card-body">
-                        <img class="img-fluid" src="https://kallasa.000webhostapp.com/Assets/img/icons/Prevcc.png" style="width: 100px;" alt="">
-                        <h5 class="card-title mt-3">Previsão do comportamento do cliente</h5>
+                <div class="container-fluid my-3 mx-md-0 mx-auto p-0 shadow" style="width: 250px;">
+                    <div class="kallasa-box-solutions d-flex">
+                        <div class="kallasa-box-solutions-left"></div>
+                        <div class="kallasa-box-solutions-right"></div>
+                        <div class="kallasa-box-title d-inline position-absolute border">
+                            <div class="container-fluid d-flex flex-row align-items-center justify-content-center" style="height: 175px; opacity:68%;">
+                            <img src="http://192.168.0.100/kallasa.com.br/assets/img/icons/peoples-two.svg" class="edit-img" alt="peoples two">
+                            </div>
+                            <div class="container-fluid mt-2" style="height: 175px;">
+                            <h3 class="text-light text-start fs-6">Estratégia orientada pelo ROI</h3>
+                            <p class="text-light mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt asperiores, dolor quaerat perferendis eaque.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card text-center pt-5 pb-3 my-lg-0 my-md-0 my-3 shadow-sm" style="width: 18rem;">
-                    <div class="card-body">
-                        <img class="img-fluid" src="https://kallasa.000webhostapp.com/Assets/img/icons/EO.png" style="width: 100px;" alt="">
-                        <h5 class="card-title mt-3">Estratégia orientada pelo ROI</h5>
+            </div>
+
+        </section>
+
+        <section class="section-03 w-100 bg-dark d-flex flex-row flex-nowrap justify-content-center py-5">
+            <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center my-5">
+                <div class="container-fluid mx-md-0 mx-auto px-0 mt-md-5 mt-5" style="width: 400px;">
+                    <h5 class="card-title fs-1 text-white">Conheça nossos projetos sociais</h5><br>
+                    <div class="container-fluid d-flex flex-row flex-wrap justify-content-between px-0">
+                        <a class="btn btn-primary py-2" href="#">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="container-fluid mx-md-0 mx-auto p-0 mt-md-0 mt-5" style="width: 300px;">
+                    <div class="kallasa-box d-flex">
+                        <div class="d-flex kallasa-edit-01">
+                        </div>
+                        <div class="kallasa-box-left bg-primary kallasa-edit-02"></div>
+                        <div class="kallasa-box-right bg-primary kallasa-edit-02"></div>
                     </div>
                 </div>
             </div>
