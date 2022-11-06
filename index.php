@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="./Assets/css/web-projects.css" rel="stylesheet" type="text/css">
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="http://192.168.0.100/kallasa.com.br/Assets/img/favicon/favicon.ico">
     <title>Kallasa Mkt</title>
@@ -104,8 +105,8 @@
         </section>
 
         <!-- SOLUTIONS -->
-        <section class="section-02 my-5 bg-secondary bg-opacity-10 py-2">
-            <p class="text-center mt-5 fs-3 fw-bold">Nossas soluções se baseiam em</p>
+        <section class="section-02 py-5 bg-secondary bg-opacity-10">
+            <h4 class="title fs-3 fw-bold text-center mt-5">Nossas soluções se baseiam em</h4>
             <div class="container-lg py-3 mt-5 d-flex flex-row flex-wrap justify-content-around">
 
                 <div class="container-fluid my-3 mx-md-0 mx-auto p-0 shadow" style="width: 250px;">
@@ -161,15 +162,27 @@
         </section>
 
         <!-- SOCIAL PROJECTS -->
-        <section class="section-03 w-100 bg-white d-flex flex-row flex-nowrap justify-content-center py-5">
+        <section class="section-03 w-100 bg-white py-5">
             <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center my-5">
-                <div class="container-fluid mx-md-0 mx-auto px-0 mt-md-5 mt-5" style="width: 400px;">
+                <div class="container-fluid mx-md-0 mx-auto px-0" style="width: 300px;">
                     <h5 class="card-title fs-1 text-dark">Conheça nossos projetos sociais</h5><br>
                     <div class="container-fluid d-flex flex-row flex-wrap justify-content-between px-0">
                         <a class="btn btn-primary py-2" href="#">Ver mais</a>
                     </div>
                 </div>
-                
+                <div class="container-fluid" style="max-width: 600px;">
+                    <div class="col-md-12 p-0 d-flex flex-row flex-wrap justify-content-end ">
+                        <div class="row">
+                            <div class="bg-secondary mx-2 bx-img-01" style="width: 175px; height: 175px;"></div>
+                            <div class="bg-secondary ms-2 bx-img-02" style="width: 365px; height: 175px;"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="bg-secondary mx-2 bx-img-03" style="width: 175px; height: 250px;"></div>
+                            <div class="bg-secondary mx-2 bx-img-04" style="width: 175px; height: 250px;"></div>
+                            <div class="bg-secondary ms-2 bx-img-05" style="width: 175px; height: 250px;"></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -178,14 +191,18 @@
         <section class="section-04 w-100 bg-secondary bg-opacity-10 d-flex flex-row flex-nowrap justify-content-center py-5">
             <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center my-5">
                 <div class="container-fluid mx-md-0 mx-auto px-0 mt-md-5 mt-5" style="width: 400px;">
-                    <h5 class="card-title fs-1 text-dark">Conheça nossos projetos sociais</h5><br>
+                    <h5 class="card-title fs-1 text-dark">Como a consultoria da Kallasa pode ajudar a sua empresa</h5><br>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Aumentar Faturamento</p>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Reduzir os Custos</p>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Aumentar a Margem de Lucro</p>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Otimizar os Processos</p>
                     <div class="container-fluid d-flex flex-row flex-wrap justify-content-between px-0">
-                        <a class="btn btn-primary py-2" href="#">Ver mais</a>
+                        <a class="btn btn-primary py-2" href="#">Vamos Conversar</a>
                     </div>
                 </div>
 
-                <div class="container-fluid d-flex" style="width: 400px; height:400px;">
-                    <div class="container-fluid position-absolute" style="width: 300px; margin-left:150px; z-index:100;">
+                <div class="container-fluid d-none d-md-block d-lg-block" style="width: 400px; height:400px;">
+                    <div class="container-fluid position-absolute ps-0" style="width: 300px; margin-left:162px; z-index:100;">
                         <div class="kallasa-box-simple2 d-flex">
                             <div class="d-flex kallasa-edit-simple2-01">
                             </div>
@@ -204,6 +221,14 @@
                                        
                 </div>
 
+            </div>
+        </section>
+
+        <!-- ASSESSMENTS -->
+        <section class="section-03 w-100 bg-white py-5">
+            <h4 class="title fs-3 fw-bold text-center mt-5">Depoimentos de alguns dos nossos clientes</h4>
+            <div class="container-lg">
+                
             </div>
         </section>
     </main>

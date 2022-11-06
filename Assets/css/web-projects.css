@@ -1,0 +1,68 @@
+.kallasa-box-simple{
+    height: 300px;
+    width: 300px;
+  }
+  .kallasa-box-simple-left{
+    height: 300px;
+    width: 150px;
+    border-top-right-radius: 40px 30px;
+  }
+  .kallasa-box-simple-right{
+    height: 300px;
+    width: 150px;
+    border-top-left-radius: 40px 30px;
+  }
+  .kallasa-edit-simple-02{
+    z-index: 0;
+  }
+  
+  
+  
+  .kallasa-box-simple2{
+    height: 300px;
+    width: 300px;
+  }
+  .kallasa-box-simple2-left{
+    height: 300px;
+    width: 150px;
+    border-bottom-right-radius: 40px 30px;
+  }
+  .kallasa-box-simple2-right{
+    height: 300px;
+    width: 150px;
+    border-bottom-left-radius: 40px 30px;
+  }
+  .kallasa-edit-simple2-02{
+    z-index: 0;
+  }
+
+
+/* SOCIAL PROJECTS */
+
+.bx-img-01{
+    background-image: url(../img/social-project-grup/001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.bx-img-02{
+    background-image: url(../img/social-project-grup/002.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bx-img-03{
+    background-image: url(../img/social-project-grup/003.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bx-img-04{
+    background-image: url(../img/social-project-grup/004.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bx-img-05{
+    background-image: url(../img/social-project-grup/005.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}

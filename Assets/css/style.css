@@ -107,43 +107,7 @@ body{
 }
 
 
-.kallasa-box-simple{
-  height: 300px;
-  width: 300px;
-}
-.kallasa-box-simple-left{
-  height: 300px;
-  width: 150px;
-  border-top-right-radius: 40px 30px;
-}
-.kallasa-box-simple-right{
-  height: 300px;
-  width: 150px;
-  border-top-left-radius: 40px 30px;
-}
-.kallasa-edit-simple-02{
-  z-index: 0;
-}
 
-
-
-.kallasa-box-simple2{
-  height: 300px;
-  width: 300px;
-}
-.kallasa-box-simple2-left{
-  height: 300px;
-  width: 150px;
-  border-bottom-right-radius: 40px 30px;
-}
-.kallasa-box-simple2-right{
-  height: 300px;
-  width: 150px;
-  border-bottom-left-radius: 40px 30px;
-}
-.kallasa-edit-simple2-02{
-  z-index: 0;
-}
 
 /*SECTION 02*/
 
