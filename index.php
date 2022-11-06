@@ -69,9 +69,15 @@
                 </div>
             </div>
         </nav>
+        <div class="col-md-12 m-0">
+            <div class="row pt-5 mx-0 px-0">
+                <p class="text-end mt-5 position-fixed mx-0 px-0" style="z-index:101;"><a class="bg-dark text-white py-2 px-3 rounded-start" style="text-decoration:none;" href="http://192.168.0.100/kallasa.com.br/views/pages/workflow.php" >Workflow</a><p>
+            </div>
+        </div>
     </header>
     
     <main>
+        <!-- SLIDE -->
         <section class="section-01 w-100 bg-light d-flex flex-row flex-nowrap justify-content-center" style="height: 800px;">
             <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center">
                 
@@ -97,7 +103,8 @@
 
         </section>
 
-        <section class="section-02 my-5">
+        <!-- SOLUTIONS -->
+        <section class="section-02 my-5 bg-secondary bg-opacity-10 py-2">
             <p class="text-center mt-5 fs-3 fw-bold">Nossas soluções se baseiam em</p>
             <div class="container-lg py-3 mt-5 d-flex flex-row flex-wrap justify-content-around">
 
@@ -153,23 +160,50 @@
 
         </section>
 
-        <section class="section-03 w-100 bg-dark d-flex flex-row flex-nowrap justify-content-center py-5">
+        <!-- SOCIAL PROJECTS -->
+        <section class="section-03 w-100 bg-white d-flex flex-row flex-nowrap justify-content-center py-5">
             <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center my-5">
                 <div class="container-fluid mx-md-0 mx-auto px-0 mt-md-5 mt-5" style="width: 400px;">
-                    <h5 class="card-title fs-1 text-white">Conheça nossos projetos sociais</h5><br>
+                    <h5 class="card-title fs-1 text-dark">Conheça nossos projetos sociais</h5><br>
+                    <div class="container-fluid d-flex flex-row flex-wrap justify-content-between px-0">
+                        <a class="btn btn-primary py-2" href="#">Ver mais</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- PROJECT -->
+        <section class="section-04 w-100 bg-secondary bg-opacity-10 d-flex flex-row flex-nowrap justify-content-center py-5">
+            <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-between align-items-center my-5">
+                <div class="container-fluid mx-md-0 mx-auto px-0 mt-md-5 mt-5" style="width: 400px;">
+                    <h5 class="card-title fs-1 text-dark">Conheça nossos projetos sociais</h5><br>
                     <div class="container-fluid d-flex flex-row flex-wrap justify-content-between px-0">
                         <a class="btn btn-primary py-2" href="#">Ver mais</a>
                     </div>
                 </div>
 
-                <div class="container-fluid mx-md-0 mx-auto p-0 mt-md-0 mt-5" style="width: 300px;">
-                    <div class="kallasa-box d-flex">
-                        <div class="d-flex kallasa-edit-01">
+                <div class="container-fluid d-flex" style="width: 400px; height:400px;">
+                    <div class="container-fluid position-absolute" style="width: 300px; margin-left:150px; z-index:100;">
+                        <div class="kallasa-box-simple2 d-flex">
+                            <div class="d-flex kallasa-edit-simple2-01">
+                            </div>
+                            <div class="kallasa-box-simple2-left bg-secondary kallasa-edit-simple2-02"></div>
+                            <div class="kallasa-box-simple2-right bg-secondary kallasa-edit-simple2-02"></div>
                         </div>
-                        <div class="kallasa-box-left bg-primary kallasa-edit-02"></div>
-                        <div class="kallasa-box-right bg-primary kallasa-edit-02"></div>
+                    </div> 
+                    <div class="container-fluid position-absolute" style="width: 300px; margin-top:100px; z-index:10;">
+                        <div class="kallasa-box-simple d-flex">
+                            <div class="d-flex kallasa-edit-simple-01">
+                            </div>
+                            <div class="kallasa-box-simple-left bg-secondary opacity-25 kallasa-edit-simple-02"></div>
+                            <div class="kallasa-box-simple-right bg-secondary opacity-25 kallasa-edit-simple-02"></div>
+                        </div>
                     </div>
+                                       
                 </div>
+
             </div>
         </section>
     </main>
