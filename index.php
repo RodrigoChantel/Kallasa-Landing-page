@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-projects.css" rel="stylesheet" type="text/css">
+    <link href="./Assets/css/web-assessments.css" rel="stylesheet" type="text/css">
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="http://192.168.0.100/kallasa.com.br/Assets/img/favicon/favicon.ico">
     <title>Kallasa Mkt</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg  position-fixed bg-light py-3 border-bottom" style="width: 100%; z-index:100;">
+        <nav class="navbar navbar-expand-lg  position-fixed bg-light py-3 border-bottom" style="width: 100%; z-index:900;">
             <div class="container-fluid container-sm">
             <a class="navbar-brand text-dark fw-bold" href="#"><i class="fa-sharp fa-solid fa-rocket"></i> Kallasa.Mkt</a>
 
@@ -227,8 +228,19 @@
         <!-- ASSESSMENTS -->
         <section class="section-03 w-100 bg-white py-5">
             <h4 class="title fs-3 fw-bold text-center mt-5">Depoimentos de alguns dos nossos clientes</h4>
-            <div class="container-lg">
-                
+            <div class="container-lg border d-flex">
+                <div class="commit-box bg-secondary d-flex flex-wrap shadow">
+                    <div class="coomit-box-profile bg-secondary bg-secondary d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="bg-white rounded-circle my-0" style="width: 100px; height:100px;"></div>
+                        <p class="text-center text-white my-0">Rodrigo Chantel</p>
+                    </div>
+                    <div class="m-0 p-0">
+                        <div class="commit-box-left"></div>
+                        <div class="commit-box-right"></div>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </main>
