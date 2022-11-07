@@ -18,3 +18,36 @@
     width: 150px;
     height: 250px;
 }
+
+/* ASSESSMENTS SECOND PLAN*/
+
+.commit-box-sec{
+    width: 300px;
+    height: 200px;
+    opacity: 50%;
+}
+.commit-box-left-sec{
+    width: 175px;
+    height: 50%;
+    border-bottom-left-radius: 35px 50px;
+    background-color: #d0d3d5;
+}
+.commit-box-right-sec{
+    width: 175px;
+    height: 50%;
+    border-top-left-radius: 35px 50px;
+    background-color: #d0d3d5;
+}
+.coomit-box-profile-sec{
+    width: 40%;
+    height: 100%;
+}
+
+/* HOVER ACTIVE */
+
+.commit-box-sec:hover{
+    width: 350px;
+    height: 250px;
+    opacity: 100%;
+    z-index: 3;
+}

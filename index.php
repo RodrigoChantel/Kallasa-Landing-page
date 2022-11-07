@@ -7,6 +7,7 @@
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-projects.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-assessments.css" rel="stylesheet" type="text/css">
+    <link href="./Assets/css/botoes.css" rel="stylesheet" type="text/css">
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="http://192.168.0.100/kallasa.com.br/Assets/img/favicon/favicon.ico">
     <title>Kallasa Mkt</title>
@@ -227,22 +228,51 @@
 
         <!-- ASSESSMENTS -->
         <section class="section-03 w-100 bg-white py-5">
-            <h4 class="title fs-3 fw-bold text-center mt-5">Depoimentos de alguns dos nossos clientes</h4>
-            <div class="container-lg border d-flex">
-                <div class="commit-box bg-secondary d-flex flex-wrap shadow">
-                    <div class="coomit-box-profile bg-secondary bg-secondary d-flex justify-content-center align-items-center flex-wrap">
-                        <div class="bg-white rounded-circle my-0" style="width: 100px; height:100px;"></div>
-                        <p class="text-center text-white my-0">Rodrigo Chantel</p>
+            <h4 class="title fs-3 fw-bold text-center">Depoimentos de alguns dos nossos clientes</h4>
+            <div class="container-lg mt-5 d-flex flex-row flex-wrap justify-content-center align-items-center">
+                
+                <div class="commit-box bg-secondary d-flex flex-nowrap shadow" style="z-index: 2;">
+                    <div class="coomit-box-profile bg-secondary my-0 py-0 bg-secondary d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+                            <div class="bg-white rounded-circle my-0" style="width: 100px; height:100px;"></div>
+                            <p class="text-center text-white mt-3 my-0">Nome da Pessoa</p>
+                        </div>
                     </div>
-                    <div class="m-0 p-0">
+                    <div class="my-0 py-0">
                         <div class="commit-box-left"></div>
                         <div class="commit-box-right"></div>
                     </div>
                 </div>
 
+                <div class="commit-box-sec bg-secondary d-flex flex-nowrap shadow position-absolute" style="margin-right: 550px;">
+                    <div class="coomit-box-profile-sec bg-secondary my-0 py-0 bg-secondary d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+                            <div class="bg-white rounded-circle my-0" style="width: 100px; height:100px;"></div>
+                            <p class="text-center text-white mt-3 my-0">Nome da Pessoa</p>
+                        </div>
+                    </div>
+                    <div class="my-0 py-0">
+                        <div class="commit-box-left-sec"></div>
+                        <div class="commit-box-right-sec"></div>
+                    </div>
+                </div>
 
+                <div class="commit-box-sec bg-secondary d-flex flex-nowrap shadow position-absolute" style="margin-left: 550px;">
+                    <div class="coomit-box-profile-sec bg-secondary my-0 py-0 bg-secondary d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+                            <div class="bg-white rounded-circle my-0" style="width: 100px; height:100px;"></div>
+                            <p class="text-center text-white mt-3 my-0">Nome da Pessoa</p>
+                        </div>
+                    </div>
+                    <div class="my-0 py-0">
+                        <div class="commit-box-left-sec"></div>
+                        <div class="commit-box-right-sec"></div>
+                    </div>
+                </div>
             </div>
+
         </section>
+        
     </main>
 </body>
 <script src="http://192.168.0.100/kallasa.com.br/assets/js/popper.min.js"></script>
