@@ -1,0 +1,19 @@
+.plan-price{
+    width: 250px;
+    height: 400px;
+    background-color: #636363;
+}
+
+.plan-price-left{
+    width: 125px;
+    height: 100px;
+    background-color: #c4c4c4;
+    border-bottom-right-radius: 50px 40px;
+}
+
+.plan-price-right{
+    width: 125px;
+    height: 100px;
+    background-color: #c4c4c4;
+    border-bottom-left-radius: 50px 40px;
+}

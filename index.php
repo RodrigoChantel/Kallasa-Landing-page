@@ -7,7 +7,7 @@
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-projects.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-assessments.css" rel="stylesheet" type="text/css">
-    <link href="./Assets/css/botoes.css" rel="stylesheet" type="text/css">
+    <link href="./Assets/css/web-plans.css" rel="stylesheet" type="text/css">
     <link href="http://192.168.0.100/kallasa.com.br/assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="http://192.168.0.100/kallasa.com.br/Assets/img/favicon/favicon.ico">
     <title>Kallasa Mkt</title>
@@ -273,6 +273,92 @@
 
         </section>
         
+        <!-- PLANS -->
+        <section class="section-04 w-100 bg-secondary bg-opacity-10 py-5">
+            <div class="container-lg w-100 d-flex flex-row flex-wrap justify-content-between px-0">
+                <div class="plan-price d-flex flex-wrap">
+                    <div class="plan-price-left"></div>
+                    <div class="plan-price-right"></div>
+                    <div class="row position-absolute mt-3 mx-0 px-0" style="width: 250px;">
+                        <span class="text-center ">BASIC</span>
+                    </div>
+                    <div class="w-100 px-4 border-bottom">
+                        <p class="text-white text-opacity-75 m-0">Identidade visual</p>
+                        <p class="text-white text-opacity-75 m-0">Social media</p>
+                        <p class="text-white text-opacity-75 m-0">Desenvolvimento</p>
+                        <p class="text-white text-opacity-75 m-0">Trafego pago</p>
+                        <p class="text-white text-opacity-75 m-0">Consultoria</p>
+                        <p class="text-white text-opacity-75 m-0">Gestão de equipes</p>
+                    </div>
+                    <div class="w-100 px-4 bg-secondary bg-opacity-10 d-flex flex-column">
+                        <span class="text-light text-center my-3">R$ 50,00/mês</span>
+                        <div class="btn bg-light bg-opacity-50 text-light text-center">Contratar</div>
+                    </div>
+                </div>
+
+                <div class="plan-price d-flex flex-wrap">
+                    <div class="plan-price-left"></div>
+                    <div class="plan-price-right"></div>
+                    <div class="row position-absolute mt-3 mx-0 px-0" style="width: 250px;">
+                        <span class="text-center ">BASIC</span>
+                    </div>
+                    <div class="w-100 px-4 border-bottom">
+                        <p class="text-white text-opacity-75 m-0">Identidade visual</p>
+                        <p class="text-white text-opacity-75 m-0">Social media</p>
+                        <p class="text-white text-opacity-75 m-0">Desenvolvimento</p>
+                        <p class="text-white text-opacity-75 m-0">Trafego pago</p>
+                        <p class="text-white text-opacity-75 m-0">Consultoria</p>
+                        <p class="text-white text-opacity-75 m-0">Gestão de equipes</p>
+                    </div>
+                    <div class="w-100 px-4 bg-secondary bg-opacity-10 d-flex flex-column">
+                        <span class="text-light text-center my-3">R$ 50,00/mês</span>
+                        <div class="btn bg-light bg-opacity-50 text-light text-center">Contratar</div>
+                    </div>
+                </div>
+
+                <div class="plan-price d-flex flex-wrap">
+                    <div class="plan-price-left"></div>
+                    <div class="plan-price-right"></div>
+                    <div class="row position-absolute mt-3 mx-0 px-0" style="width: 250px;">
+                        <span class="text-center ">BASIC</span>
+                    </div>
+                    <div class="w-100 px-4 border-bottom">
+                        <p class="text-white text-opacity-75 m-0">Identidade visual</p>
+                        <p class="text-white text-opacity-75 m-0">Social media</p>
+                        <p class="text-white text-opacity-75 m-0">Desenvolvimento</p>
+                        <p class="text-white text-opacity-75 m-0">Trafego pago</p>
+                        <p class="text-white text-opacity-75 m-0">Consultoria</p>
+                        <p class="text-white text-opacity-75 m-0">Gestão de equipes</p>
+                    </div>
+                    <div class="w-100 px-4 bg-secondary bg-opacity-10 d-flex flex-column">
+                        <span class="text-light text-center my-3">R$ 50,00/mês</span>
+                        <div class="btn bg-light bg-opacity-50 text-light text-center">Contratar</div>
+                    </div>
+                </div>
+
+                <div class="plan-price d-flex flex-wrap">
+                    <div class="plan-price-left"></div>
+                    <div class="plan-price-right"></div>
+                    <div class="row position-absolute mt-3 mx-0 px-0" style="width: 250px;">
+                        <span class="text-center ">BASIC</span>
+                    </div>
+                    <div class="w-100 px-4 border-bottom">
+                        <p class="text-white text-opacity-75 m-0">Identidade visual</p>
+                        <p class="text-white text-opacity-75 m-0">Social media</p>
+                        <p class="text-white text-opacity-75 m-0">Desenvolvimento</p>
+                        <p class="text-white text-opacity-75 m-0">Trafego pago</p>
+                        <p class="text-white text-opacity-75 m-0">Consultoria</p>
+                        <p class="text-white text-opacity-75 m-0">Gestão de equipes</p>
+                    </div>
+                    <div class="w-100 px-4 bg-secondary bg-opacity-10 d-flex flex-column">
+                        <span class="text-light text-center my-3">R$ 50,00/mês</span>
+                        <div class="btn bg-light bg-opacity-50 text-light text-center">Contratar</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
     </main>
 </body>
 <script src="http://192.168.0.100/kallasa.com.br/assets/js/popper.min.js"></script>
