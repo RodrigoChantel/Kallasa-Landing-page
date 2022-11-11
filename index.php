@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://192.168.0.100/kallasa.com.br/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="./Assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-projects.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-assessments.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-plans.css" rel="stylesheet" type="text/css">
-    <link href="http://192.168.0.100/kallasa.com.br/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="http://192.168.0.100/kallasa.com.br/Assets/img/favicon/favicon.ico">
+    <link href="./Assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Assets/img/favicon/favicon.ico">
     <title>Kallasa Mkt</title>
 </head>
 <body>
@@ -117,7 +117,7 @@
                         <div class="kallasa-box-solutions-right"></div>
                         <div class="kallasa-box-title d-inline position-absolute border">
                             <div class="container-fluid d-flex flex-row align-items-center justify-content-center" style="height: 175px; opacity:68%;">
-                            <img src="http://192.168.0.100/kallasa.com.br/assets/img/icons/analysis.svg" class="edit-img" alt="analysis">
+                            <img src="./Assets/img/icons/analysis.svg" class="edit-img" alt="analysis">
                             </div>
                             <div class="container-fluid mt-2" style="height: 175px;">
                             <h3 class="text-light text-start fs-5">Analytics</h3>
@@ -133,7 +133,7 @@
                         <div class="kallasa-box-solutions-right"></div>
                         <div class="kallasa-box-title d-inline position-absolute border">
                             <div class="container-fluid d-flex flex-row align-items-center justify-content-center" style="height: 175px; opacity:68%;">
-                            <img src="http://192.168.0.100/kallasa.com.br/assets/img/icons/people-search-one.svg" class="edit-img" alt="people search one">
+                            <img src="./Assets/img/icons/people-search-one.svg" class="edit-img" alt="people search one">
                             </div>
                             <div class="container-fluid mt-2" style="height: 175px;">
                             <h3 class="text-light text-start fs-6">Previsão do comportamento do cliente</h3>
@@ -149,7 +149,7 @@
                         <div class="kallasa-box-solutions-right"></div>
                         <div class="kallasa-box-title d-inline position-absolute border">
                             <div class="container-fluid d-flex flex-row align-items-center justify-content-center" style="height: 175px; opacity:68%;">
-                            <img src="http://192.168.0.100/kallasa.com.br/assets/img/icons/peoples-two.svg" class="edit-img" alt="peoples two">
+                            <img src="./Assets/img/icons/peoples-two.svg" class="edit-img" alt="peoples two">
                             </div>
                             <div class="container-fluid mt-2" style="height: 175px;">
                             <h3 class="text-light text-start fs-6">Estratégia orientada pelo ROI</h3>
@@ -228,8 +228,8 @@
 
         <!-- ASSESSMENTS -->
         <section class="section-03 w-100 bg-white py-5">
-            <h4 class="title fs-3 fw-bold text-center">Depoimentos de alguns dos nossos clientes</h4>
-            <div class="container-lg mt-5 d-flex flex-row flex-wrap justify-content-center align-items-center">
+            <h4 class="title fs-3 fw-bold text-center my-3">Depoimentos de alguns dos nossos clientes</h4>
+            <div class="container-lg my-5 d-flex flex-row flex-wrap justify-content-center align-items-center">
                 
                 <div class="commit-box bg-secondary d-flex flex-nowrap shadow" style="z-index: 2;">
                     <div class="coomit-box-profile bg-secondary my-0 py-0 bg-secondary d-flex justify-content-center align-items-center flex-wrap">
@@ -275,7 +275,8 @@
         
         <!-- PLANS -->
         <section class="section-04 w-100 bg-secondary bg-opacity-10 py-5">
-            <div class="container-lg w-100 d-flex flex-row flex-wrap justify-content-between px-0">
+            <h4 class="title fs-3 fw-bold text-center mb-5">Qual plano se encaixa melhor para sua empresa?</h4>
+            <div class="container-lg w-100 d-flex flex-row mb-5 flex-wrap justify-content-between px-0">
                 <div class="plan-price d-flex flex-wrap">
                     <div class="plan-price-left"></div>
                     <div class="plan-price-right"></div>
@@ -359,11 +360,32 @@
 
             </div>
         </section>
+
+        <!-- QUESTIONS -->
+        <section class="section-03 w-100 bg-white py-5">
+            <div class="container-lg h-100 d-flex flex-row flex-wrap justify-content-around align-items-center my-5">
+                    <div class="container-fluid mx-md-0 mx-auto px-0 mt-md-5 mt-5" style="width: 400px;">
+                        <h5 class="card-title fs-1 text-dark">Ainda com dúvidas?</h5><br>
+                        <p>Consulte nosso FAQ e veja nossa área de dúvidas frequentes, ou</p>
+                        <a href="#" class="btn btn-primary">Entre em contato</a>
+                    </div>
+                    <div class="bg-secondary" style="width: 350px; height:300px;">
+                    </div>
+            </div>
+        </section>
+
+        <!-- STAFF -->
+        <section class="section-04 w-100 bg-secondary bg-opacity-10 py-5">
+            <div class="container-lg w-100 d-flex flex-row flex-wrap justify-content-between px-0">
+                
+            </div>
+        </section>
+
     </main>
 </body>
-<script src="http://192.168.0.100/kallasa.com.br/assets/js/popper.min.js"></script>
-<script src="http://192.168.0.100/kallasa.com.br/assets/js/style.js"></script>
-<script src="http://192.168.0.100/kallasa.com.br/assets/js/bootstrap.min.js"></script>
+<script src="./Assets/js/popper.min.js"></script>
+<script src="./Assets/js/style.js"></script>
+<script src="./Assets/js/bootstrap.min.js"></script>
 <script src="./Assets/js/fontawesome.js" crossorigin="anonymous"></script>
 <script>const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))</script>
