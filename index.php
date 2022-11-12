@@ -9,8 +9,15 @@
     <link href="./Assets/css/web-assessments.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/web-plans.css" rel="stylesheet" type="text/css">
     <link href="./Assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/x-icon" href="./Assets/img/favicon/favicon.ico">
     <title>Kallasa Mkt</title>
+    <style>
+    </style>
 </head>
 <body>
     <header>
