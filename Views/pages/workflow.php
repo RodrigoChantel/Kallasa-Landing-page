@@ -12,7 +12,7 @@
     <link href="http://192.168.0.100/kallasa.com.br/Assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://192.168.0.100/kallasa.com.br/Assets/css/workflow.css" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="./Assets/img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://192.168.0.100/kallasa.com.br/Assets/img/favicon/favicon.ico">
     <title>Workflow Kristta</title>
     <style>
     </style>
@@ -21,11 +21,8 @@
     
     <?php
         include_once('http://192.168.0.100/kallasa.com.br/Views/layout/header.php');
-        date_default_timezone_set('America/Sao_Paulo');
-        $horaAtual = new datetime();
-        $horaAtual = $horaAtual->format('H:i');
 
-                include_once("http://192.168.0.100/kallasa.com.br/Views/layout/workflow/content.php");
+        include_once("http://192.168.0.100/kallasa.com.br/Views/layout/workflow/content.php");
 /*
         if(($horaAtual > $inicioDaNoite) && ($horaAtual < $fimDaNoite))
             include_once("http://192.168.0.100/kallasa.com.br/Views/layout/workflow/contentDia.php");

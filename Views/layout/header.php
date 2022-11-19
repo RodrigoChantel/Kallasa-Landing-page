@@ -1,4 +1,4 @@
-<header>
+<header class="p-0 m-0">
         <nav class="navbar navbar-expand-lg  position-fixed bg-light py-3 border-bottom" style="width: 100%; z-index:900;">
             <div class="container-fluid container-sm">
             <a class="navbar-brand text-dark fw-bold" href="#"><i class="fa-sharp fa-solid fa-rocket"></i> Kristta</a>

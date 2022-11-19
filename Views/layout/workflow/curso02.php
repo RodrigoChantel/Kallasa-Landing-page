@@ -19,5 +19,18 @@
     }
     echo Bradesco(10);
 
+    function pessoa($nome){
+        return strtoupper($nome);
+    }
+    echo strtolower(pessoa("Rodrigo Chantel Hora <br>"));
+    echo ucfirst("rodrigo <br>");
+    echo ucwords( strtolower(pessoa("rodrigo cHANTEL hORA <br>")));
+
+    $localidade = "Aracaju/SE";
+    $localArray = explode("/", $localidade);
+    
+    foreach($localArray as $localizacao){
+        echo "{$localizacao} <br>";
+    }
 ?>
 
