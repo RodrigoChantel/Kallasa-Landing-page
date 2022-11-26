@@ -1,3 +1,5 @@
+<?php
+?>
 <main class="p-0 m-0">
         <div class="col-md-12 m-0">
             <div class="row pt-5 mx-0 px-0">
@@ -9,14 +11,15 @@
             <div class="row h-100">
                 <div class="col-lg-12 ">
                     <div class="container-lg">
-                        <!--
                         <table class="table table-striped align-middle h-50 wordkflow-tbl">
+                            <input type="hidden" name="timeLine" value="show">
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Descrição</th>
                                 <th scope="col">Motivo</th>
                                 <th scope="col">Data</th>
                             </tr>
+
                             <tr>
                                 <td>1</td>
                                 <td>Adição de seções pendentes</td>
@@ -36,12 +39,13 @@
                                 <td>15/11/2022</td>
                             </tr>
                         </table>
--->
                         <?php 
                             //include ('../workflow/curso01.php');
                             //include ('../workflow/curso02.php');
                             //include ('../workflow/curso003.php');
-                            include ('../workflow/curso004.php');
+                            //include ('../workflow/curso004.php');
+                            include ('../workflow/curso005.php');
+                            include ('../workflow/curso006.php');
                         
                         ?>
                     </div>
