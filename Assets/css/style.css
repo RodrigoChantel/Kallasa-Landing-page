@@ -1,15 +1,22 @@
 body{
-    min-height: auto;
-    max-width: 100%; 
-    width: 100%;
-    margin: 0 auto;
-    font-family: "Helvetica", Sans-Serif;
-    position: relative;
-    visibility: visible;
-    overflow-x: hidden;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: #fff;
+  min-height: auto;
+  max-width: 100%; 
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Helvetica", Sans-Serif;
+  position: relative;
+  visibility: visible;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fff;
+}
+
+
+
+.txt-font{
+  
+  font-family: "Helvetica", Sans-Serif;
 }
 
 .footer01{
@@ -78,7 +85,7 @@ body{
 
 .kallasa-edit-01{
   /*background-image: url('http://192.168.0.100/kallasa.com.br/assets/img/bg-section-01.jpg');*/
-  background-image: url('http://192.168.0.100/kallasa.com.br/assets/img/K-kallasa.png');
+  background-image: url('https://kristta.com.br/assets/img/K-kallasa.png');
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,7 +119,7 @@ body{
 /*SECTION 02*/
 
 .section-01{
-  background-image: url("http://192.168.0.100/kallasa.com.br/assets/img/bg-section-01.jpg");
+  background-image: url("https://kristta.com.br/assets/img/bg-section-02.jpg");
   background-size: auto;
   background-repeat:no-repeat;
   background-position:center;

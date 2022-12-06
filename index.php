@@ -11,16 +11,20 @@
     <link href="./Assets/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="./Assets/img/favicon/favicon.ico">
-    <title>Kallasa Mkt</title>
+    <title>Kristta</title>
     <style>
     </style>
 </head>
 <body>
     
     <?php
-        include_once('./Views/layout/header.php');
-        include_once('./Views/layout/content.php');
-        include_once('./Views/layout/footer.php');
+        //include_once('./Views/layout/header.php');
+        //include_once('./Views/layout/content.php');
+        //include_once('./Views/layout/footer.php');
+
+        //maintence
+        //include_once('https://kristta.com.br/views/pages/workflow.php');
+        include_once('http://192.168.0.100/kallasa.com.br/views/pages/maintence.php');
     ?>
     
 </body>
