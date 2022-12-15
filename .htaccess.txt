@@ -1,0 +1,27 @@
+#Protegendo seu arquivo .htaccess
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+#Forçando redirecionamento de http para https (SSL)
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+#Evitando a listagem
+Options -Indexes
+
+#Reescrevendo URLs – Tornando-as amigáveis
+RewriteEngine on
+RewriteRule ^produto-([0-9]+)\.html$ produto.php?id=$1
+
+#Bloqueando hotlinks em imagens
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?meusite.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+
+#Acesso restrito!
+Options -indexes
