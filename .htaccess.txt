@@ -25,3 +25,8 @@ RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
 
 #Acesso restrito!
 Options -indexes
+
+#Expira sessao
+php_value session.save_path /uma_pasta_tmp_para_as_sessoes/
+php_value session.cache_expire 1
+php_value session.gc_maxlifetime 900

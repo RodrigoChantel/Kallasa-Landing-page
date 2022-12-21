@@ -13,7 +13,7 @@
 <body class="bg-light" style="height: 90vh; width:100%;">
 
     <div class="container-fluid m-0 p-0 d-flex flex-row flex-wrap justify-content-center align-content-center h-100">
-        <form class="form form-control w-25 shadow" action="http://localhost/kallasa.com.br/app/controller/Redirect.php" method="POST" style="min-width: 350px;">
+        <form class="form form-control w-25 shadow" action="http://localhost/kallasa.com.br/app/Controller/Redirect.php" method="POST" style="min-width: 350px;">
             <input type="hidden" name="loginDashboard" value="auth2022">
             <h4 class="my-3 text-center">KRISTTA</h4>
             <label class="form-label" for="usuario">USUÁRIO</label>

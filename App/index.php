@@ -1,5 +1,6 @@
 <?php
 	require_once('C:\xampp\htdocs\kallasa.com.br\App\Config\auth.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,6 +10,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link href="http://localhost/poo.curso/Assets/Css/styleHover.css" rel="stylesheet">
     <title>Dashboard</title>
+
+	<style>
+		.bgTeste{
+			background-image: url('./Assets/Img/bgteste.jpg');
+			background-repeat: no-repeat;
+			background-position-y: bottom;
+			background-size: cover;
+		}
+	</style>
+
   </head>
 <body class="bg-light">
 	<header class="fixed-top border-bottom border-secondary">
@@ -37,7 +48,7 @@
 	<main class="mt-5 position-fixed w-100">
 		<div class="container-fluid m-0 p-0">
 			<div  style="height:97vh;" class="container-fluid m-0 p-0 d-flex flex-row flex-nowrap">
-				<div class="d-block nav-bg pt-2" id="menu2">
+				<div class="d-block nav-bg pt-2 bgTeste" id="menu2">
 					
 					<button class="btn w-100 border-0 text-start px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" id="botao01" onclick="Recuperar('box, botao01, botao02')">
 						<i class="fa-sharp fa-solid fa-bars fw-bold fs-5 text-light"></i>
@@ -48,7 +59,7 @@
 					</button>
 
                     <div class="" id="box" style="max-height: 80vh;">
-						<p onclick="Inicio('inicio')"class="m-0 py-1 p-0 include-hover d-flex"><a class="btn w-25 text-start text-light py-0 mt-0 teste"><i class="fa-sharp fa-solid fa-house"></i></a><a  class="collapse collapse-horizontal btn w-75 text-start text-light py-0 mt-0 teste border-0" id="collapseWidthExample"><span> Inicio</span></a></p>
+						<p onclick="Inicio('inicio') "class="m-0 py-1 p-0 include-hover d-flex"><a class="btn w-25 text-start text-light py-0 mt-0 teste"><i class="fa-sharp fa-solid fa-house"></i></a><a  class="collapse collapse-horizontal btn w-75 text-start text-light py-0 mt-0 teste border-0" id="collapseWidthExample"><span> Inicio</span></a></p>
 						<p onclick="Atendimento('atendimento')" class="m-0 py-1 p-0 include-hover d-flex"><a class="btn w-25 text-start text-light py-0 mt-0 teste"><i class="fa-solid fa-user-plus fs-5"></i></a><a  class="collapse collapse-horizontal btn w-75 text-start text-light py-0 mt-0 teste border-0" id="collapseWidthExample"><span> Atendimento</span></a></p>
 						<p onclick="Clientes('clientes')" class="m-0 py-1 p-0 include-hover d-flex"><a class="btn w-25 text-start text-light py-0 mt-0 teste"><i class="fa-sharp fa-solid fa-user-group fs-5"></i></a><a  class="collapse collapse-horizontal btn w-75 text-start text-light py-0 mt-0 teste border-0" id="collapseWidthExample"><span> Clientes</span></a></p>
 						<p onclick="Treinamento('treinamento')" class="m-0 py-1 p-0 include-hover d-flex"><a class="btn w-25 text-start text-light py-0 mt-0 teste"><i class="fa-sharp fa-solid fa-graduation-cap fs-5"></i></a><a  class="collapse collapse-horizontal btn w-75 text-start text-light py-0 mt-0 teste border-0" id="collapseWidthExample"><span> Treinamentos</span></a></p>
@@ -122,8 +133,8 @@
 </body>
     <script src="./Assets/js/efect.js"></script>
 	<script src="https://kit.fontawesome.com/87a7f5c1d5.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 	<script src="./Assets/js/nav.js"></script>
 </html>
 

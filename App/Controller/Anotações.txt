@@ -1,0 +1,3 @@
+Sistema de filtro para atendimentos vinculádos ao usuário precisa puxar o USERID diretamente da session
+O USERID existente só funciona quando aplica submissão no botão do formulário
+

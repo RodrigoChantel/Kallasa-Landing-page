@@ -39,12 +39,15 @@
 
                     //Compara senha trazida do POST com senha resgatada do Banco de Dados
                     if(password_verify($passwordString, $result)):
+                                                
                         ob_start();
                         session_start();
                         $_SESSION['user'] = $listQuery['USER'];
-                        
+                        $_SESSION['user_auth'] = $listQuery['USER_AUTH'];
+                        $_SESSION['user_id'] = $listQuery['IDUSER'];
                         
                         header("location: http://localhost/kallasa.com.br/app/index.php");
+                        
 
                         //echo "<h1 class'h1Bemvindo'>Bem vindo</h1>" . "<br>" . "<h2 class='h1Bemvindo'>{$listQuery['user']}<h2>"; 
                     else:

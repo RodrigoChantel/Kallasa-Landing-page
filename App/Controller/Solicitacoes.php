@@ -1,7 +1,7 @@
 <?php
-    require_once('C:\xampp\htdocs\poo.curso\Config\conection.php');
-
-    if(session_start()){
+    require_once('C:\xampp\htdocs\kallasa.com.br\App\Config\conection.php');
+    
+    if($_SESSION == true){
         class Solicitacoes{
             public $dados;
             public $contagem;

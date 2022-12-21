@@ -1,5 +1,5 @@
 <?php
-    require_once('C:\xampp\htdocs\poo.curso\Controller\Solicitacoes.php');
+    require_once('C:\xampp\htdocs\kallasa.com.br\App\Controller\Solicitacoes.php');
     $teste = new Solicitacoes;
     
 ?>

@@ -105,3 +105,11 @@ function Suporte() {
   document.getElementById('cadastro').style.display = 'none';
   document.getElementById('suporte').style.display = 'block';
 }
+
+
+function IniciarAtendimento() {
+  document.getElementById('iniciaratendimento').style.display = 'flex';
+}
+function CancelaIniciarAtendimento() {
+  document.getElementById('iniciaratendimento').style.display = 'none';
+}
