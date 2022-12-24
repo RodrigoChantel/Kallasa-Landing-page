@@ -5,10 +5,12 @@
         class Solicitacoes{
             public $dados;
             public $contagem;
+            public $dadosUser;
 
             public function __construct()
             {
                 $this->getDados($this->setDados());
+                $this->getDadosUser($this->setDadosUser());
                 $this->setCount();
             }
 
@@ -16,7 +18,7 @@
             {
                 $conexao = new connect;
                 $conexao = $conexao->connection();
-                $sqlQuery = "select * from contact_request where 1";
+                $sqlQuery = "select * from contact_request where ID_USER_RETURN IS NULL";
                 $execute = $conexao->query($sqlQuery);
                 //$list = mysqli_num_rows($execute);
                 $this->dados = $execute->fetch_all(MYSQLI_ASSOC); 
@@ -25,6 +27,23 @@
             {
                 return $this->dados;
             }
+            
+
+            public function setDadosUser()
+            {
+                $conexao = new connect;
+                $conexao = $conexao->connection();
+                $userID = $_SESSION['user_id'];
+                $sqlQuery = "select * from contact_request where ID_USER_RETURN = '{$userID}' ";
+                $execute = $conexao->query($sqlQuery);
+                //$list = mysqli_num_rows($execute);
+                $this->dadosUser = $execute->fetch_all(MYSQLI_ASSOC); 
+            }
+            public function getDadosUser()
+            {
+                return $this->dadosUser;
+            }
+
 
             public function setCount()
             {

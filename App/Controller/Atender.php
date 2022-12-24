@@ -25,12 +25,11 @@
 
             $idUserActive = mysqli_real_escape_string($conecta, $idu);
             $idClientActive = mysqli_real_escape_string($conecta, $idc);
-            $queryVerify = "select ID_USER_RETURN from contact_request where CLIENT_ID = '{$idClientActive}' and ID_USER_RETURN = '{$idUserActive}'";
+            $queryVerify = "select ID_USER_RETURN from contact_request where 1";
 
-            $query = "UPDATE `contact_request` SET `ID_USER_RETURN`='{$idUserActive}',`RETURNED_IN`='{$hoje}',`STATUS`='1' WHERE CLIENT_ID = '{$idClientActive}'";
+            $query = "UPDATE contact_request SET ID_USER_RETURN = '{$idUserActive}', RETURNED_IN = '{$hoje}', STATUS = '1' WHERE CLIENT_ID = '{$idClientActive}'";
 
             $verifyQuery = mysqli_query($conecta, $queryVerify);
-            $execute = mysqli_query($conecta, $query);
             
             $numquery = mysqli_num_rows($verifyQuery);
             $booValidate = filter_var($numquery, FILTER_VALIDATE_BOOL);
@@ -39,6 +38,8 @@
             if($booValidate == true){
                 echo "<script type='text/javascript'>alert('O cliente já está sendo atendido por outra pessoa.');location='http://localhost/kallasa.com.br/app/index.php';</script>";
             }else{
+                $execute = mysqli_query($conecta, $query);
+
                 if($execute == true){
                     echo "<script type='text/javascript'>alert('Atendimento iniciado com sucesso! Acesse a aba de (MEUS ATENDIMENTOS) para ter acesso aos dados');location='http://localhost/kallasa.com.br/app/index.php';</script>";
                 }else{

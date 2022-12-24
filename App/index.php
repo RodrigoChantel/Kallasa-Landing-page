@@ -50,13 +50,14 @@
 			<div  style="height:97vh;" class="container-fluid m-0 p-0 d-flex flex-row flex-nowrap">
 				<div class="d-block nav-bg pt-2 bgTeste" id="menu2">
 					
-					<button class="btn w-100 border-0 text-start px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" id="botao01" onclick="Recuperar('box, botao01, botao02')">
-						<i class="fa-sharp fa-solid fa-bars fw-bold fs-5 text-light"></i>
-					</button>
-                    
-                    <button style="display:none;" class="btn w-100 border-0 text-start px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" id="botao02" aria-controls="collapseWidthExample" onclick="Recuperar2('box, botao01, botao02')">
-						<i class="fa-sharp fa-solid fa-bars fw-bold fs-5 text-light"></i>
-					</button>
+				<button class="btn w-100 border-0 text-end px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample" id="botao01" onclick="Recuperar('box, botao01, botao02')">
+					<i class="fa-sharp fa-solid fa-bars fw-bold fs-5 text-light"></i>
+				</button>
+				
+				<button style="display:none;" class="btn w-100 border-0 text-start px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" id="botao02" aria-controls="collapseWidthExample" onclick="Recuperar2('box, botao01, botao02')">
+					<i class="fa-sharp fa-solid fa-bars fw-bold fs-5 text-light"></i>
+				</button>
+
 
                     <div class="" id="box" style="max-height: 80vh;">
 						<p onclick="Inicio('inicio') "class="m-0 py-1 p-0 include-hover d-flex"><a class="btn w-25 text-start text-light py-0 mt-0 teste"><i class="fa-sharp fa-solid fa-house"></i></a><a  class="collapse collapse-horizontal btn w-75 text-start text-light py-0 mt-0 teste border-0" id="collapseWidthExample"><span> Inicio</span></a></p>
@@ -131,6 +132,7 @@
 		</div>
 	</footer>
 </body>
+	<script src="http://localhost/kallasa.com.br/App/Assets/js/dropbox.js"></script>
     <script src="./Assets/js/efect.js"></script>
 	<script src="https://kit.fontawesome.com/87a7f5c1d5.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

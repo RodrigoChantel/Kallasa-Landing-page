@@ -4,7 +4,6 @@
     require_once('C:\xampp\htdocs\kallasa.com.br\App\Controller\MeusAtendimentos.php');
     $teste = new Solicitacoes;
     
-    
 ?>
 <div class="container-fluid overflow-auto d-block" style="max-height: 90vh;">
     <div class="row pt-3">
@@ -15,18 +14,6 @@
         <hr>
     </div>
     <div class="row w-100">
-
-        <div id="iniciaratendimento" class="bg-black w-100 position-absolute bg-opacity-25 flex-row justify-content-center align-items-center" style="z-index:5; height:90vh; display:none;">
-            <div class="card py-4 px-4 shadow" style="width: 300px; z-index:10;">
-                
-                <h5>DESEJA ATENDER?</h5>
-                <p>Ao confirmar, o atendimento será iniciado.</p>
-                <div class="w-100 d-flex flex-row flex-nowrap justify-content-between">
-                    <input type="submit" class="btn btn-primary" value="Confirmar">
-                    <input onclick="CancelaIniciarAtendimento('iniciaratendimento')" type="submit" class="btn btn-danger" value="Cancelar">
-                </div>
-            </div>
-        </div>
 
         <div class="col-md-8">
             <div class="card shadow-sm mt-2">
@@ -130,23 +117,95 @@
                     </thead>
                     <tbody class="overflow-auto d-block bg-light" style="max-height: 200px;">
                         <?php    
-                            $listando = new MinhaLista;
-                            
+                           
+                           foreach ($teste->getDadosUser() as $keyUser) { 
                             
                         ?>
                         <tr class="">
-                            <td class="" style="width: 30%;"><?php $key['CLIENT_NAME'] ?></td>
-                            <td class="w-25"><?php $key['RETURNED_IN'] ?></td>
-                            <td class="w-25"><?php $key['STATUS'] ?></td>
-                            <td class="text-center" style="width: 20%;"><a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></td>
+                            <td class="" style="width: 30%;"><?php echo $keyUser['CLIENT_NAME'] ?></td>
+                            <td class="w-25"><?php echo $keyUser['RETURNED_IN'] ?></td>
+                            <td class="w-25"><?php echo $keyUser['STATUS'] ?></td>
+                            <form method="GET">
+                                <input type="hidden" name="nome" value="<?php echo $keyUser['CLIENT_NAME'] ?>">
+                                <td class="text-center" onclick="IniciarAtendimento('menuAtendimento')" style="width: 20%;"><a href="?nome=chantel+store" class="btn btn-primary" ><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></td>
+                            </form>
                         </tr>
                         <?php
-                        
+                           }
                         ?>
                     </tbody>
                 </table>
             </div>
 
         </div>
+            <!-- MENU FLUTUANTE -->
+        <?php
+            var_dump($_GET['email']);
+            
+        ?>
+            
+            <div class="card position-fixed w-50 py-4 shadow-lg draggable" id="iniciaratendimento" style="left: 25%; top:20%; display:none;">
+                        <?php    
+                           
+                           //foreach ($teste->getDadosUser() as $keyUser) { 
+                            
+                        ?>
+                <form action="">
+                    <label for="nnome">Nome</label>
+                    <input class="form-control form-control-sm" id="nnome" type="text" placeholder="<?php echo $_GET['nome'] ?>" disabled>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="eemail">E-mail</label>
+                            <input class="form-control form-control-sm" id="eemail" type="text" placeholder="<?php echo $_GET['nome'] ?>" disabled>
+                        </div>
+                        <div class="col-6">
+                            <label for="nnumero">Número</label>
+                            <input class="form-control form-control-sm" id="nnumero" type="text" placeholder="<?php echo $key['CLIENT_EMAIL'] ?>" disabled>
+                        </div>
+                    </div>
+                    <?php
+                           //}
+                    ?>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label for="nnumero">Ocorrência</label>
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option class="d-none" selected>Selecione a ocorrência</option>
+                                <option value="1">Dúvidas</option>
+                                <option value="2">Cadastro</option>
+                                <option value="3">Assinaturas</option>
+                                <option value="4">Agendamento</option>
+                                <option value="5">Call Back</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="fs-6 mt-2">Já Cadastrado?</h3>
+                            <div class="row form-check d-flex flex-row flex-nowrap justify-content-between">
+                                <div class="col-md-6">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Sim
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Não
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="descricao">Descrição</label>
+                            <textarea class="form-control" id="descricao" rows="5"></textarea>
+                            <div class="mt-3 text-end">
+                                <button class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+                                <input type="reset" onclick="CancelaIniciarAtendimento('iniciaratendimento')" class="btn btn-danger" value="Cancelar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
     </div>
 </div>

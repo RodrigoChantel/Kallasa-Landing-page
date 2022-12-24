@@ -1,6 +1,6 @@
 <?php
 require_once('/xampp/htdocs/kallasa.com.br/App/Controller/Atender.php');
-require_once('/xampp/htdocs/kallasa.com.br/App/Controller/MeusAtendimentos.php');
+//require_once('/xampp/htdocs/kallasa.com.br/App/Controller/MeusAtendimentos.php');
 if($_POST['atender'] == "atendimento2022"){
     $idUser = $_POST['idDoUser'];
     $idCliente = $_POST['idDoCliente'];
