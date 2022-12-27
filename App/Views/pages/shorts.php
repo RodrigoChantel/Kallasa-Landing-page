@@ -118,31 +118,59 @@
                     <tbody class="overflow-auto d-block bg-light" style="max-height: 200px;">
                         <?php    
                            
-                           foreach ($teste->getDadosUser() as $keyUser) { 
-                            
+                            foreach ($teste->getDadosUser() as $keyUser) { 
+                            $_GET['nome'] = $keyUser['CLIENT_NAME'];
                         ?>
                         <tr class="">
                             <td class="" style="width: 30%;"><?php echo $keyUser['CLIENT_NAME'] ?></td>
                             <td class="w-25"><?php echo $keyUser['RETURNED_IN'] ?></td>
                             <td class="w-25"><?php echo $keyUser['STATUS'] ?></td>
-                            <form method="GET">
-                                <input type="hidden" name="nome" value="<?php echo $keyUser['CLIENT_NAME'] ?>">
-                                <td class="text-center" onclick="IniciarAtendimento('menuAtendimento')" style="width: 20%;"><a href="?nome=chantel+store" class="btn btn-primary" ><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></td>
+                            <form method="GET" id="meuFormulario" name="meuFormulario">
+                                <input type="hidden" name="nomeq" id="nomeq" value="<?= (!empty($_GET['nome']))? $_GET['nome'] : '' ?>">
+                                <td class="text-center" onclick="IniciarAtendimento('iniciaratendimento')" style="width: 20%;"><button id="enviarDados" id="enviarDados" class="btn btn-primary" ><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></td>
                             </form>
+                            
                         </tr>
                         <?php
                            }
                         ?>
+                        
+                        <script>
+                            $('#meuFormulario').submit(function(e) {
+                                e.preventDefault();
+                                // chamada AJAX aqui
+                                var dadosFormulario = $("#meuFormulario").serialize();
+
+                                $.ajax({
+                                type: "GET",
+                                url: "shorts.php",
+                                data: dadosFormulario,
+                                success: function(resposta) {
+                                    // variável "resposta" contém o que o servidor envia
+                                    // aqui código a executar quando correu tudo bem
+                                },
+                                error: function() {
+                                    // correu mal, agir em conformidade
+                                }
+                                });
+                            });
+                            
+                            
+                        </script>
+                        <?php
+                            if (isset($_GET) && is_array($_GET)) {
+                                $meuNome = $_GET['nome'];
+                            }else {
+                                echo 'Ups... Preciso receber um GET e o mesmo deverá conter dados!';
+                            }
+                        ?>
+                        
                     </tbody>
                 </table>
             </div>
 
         </div>
             <!-- MENU FLUTUANTE -->
-        <?php
-            var_dump($_GET['email']);
-            
-        ?>
             
             <div class="card position-fixed w-50 py-4 shadow-lg draggable" id="iniciaratendimento" style="left: 25%; top:20%; display:none;">
                         <?php    
@@ -152,15 +180,15 @@
                         ?>
                 <form action="">
                     <label for="nnome">Nome</label>
-                    <input class="form-control form-control-sm" id="nnome" type="text" placeholder="<?php echo $_GET['nome'] ?>" disabled>
+                    <input class="form-control form-control-sm" name="iniciaratendimentoNome" id="iniciaratendimentoNome" type="text" value="" disabled>
                     <div class="row">
                         <div class="col-6">
-                            <label for="eemail">E-mail</label>
-                            <input class="form-control form-control-sm" id="eemail" type="text" placeholder="<?php echo $_GET['nome'] ?>" disabled>
+                            <label for="resultado">E-mail</label>
+                            <input class="form-control form-control-sm" id="eemail" type="text" value="" disabled>
                         </div>
                         <div class="col-6">
                             <label for="nnumero">Número</label>
-                            <input class="form-control form-control-sm" id="nnumero" type="text" placeholder="<?php echo $key['CLIENT_EMAIL'] ?>" disabled>
+                            <input class="form-control form-control-sm" id="nnumero" type="text" value="" disabled>
                         </div>
                     </div>
                     <?php

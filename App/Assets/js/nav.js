@@ -109,10 +109,10 @@ function Suporte() {
 //CONTENT DIVS
 function IniciarAtendimento() {
   document.getElementById('iniciaratendimento').style.display = 'flex';
+
+  
 }
 function CancelaIniciarAtendimento() {
   document.getElementById('iniciaratendimento').style.display = 'none';
 }
 
-
-//enviar dados de uma tabela para forms
